@@ -7,4 +7,10 @@ def create_dictionary(key, value):
     Returns:
         dict: dictionary with keys and values
     """
-    return
+    dict={}
+    for x in range(len(key)):
+        dict.update({key[x]:value[x]})
+
+
+    return dict
+print(create_dictionary(['Uzbekistan','Kazakhstan','Korea'],['uz','kz','kr']))
