@@ -10,13 +10,12 @@ def count_all(txt):
     dgt=0
     ltr=0
     
-    
     for idx in range(len(txt)):
         if txt[idx].isdigit():
             dgt+=1
         if txt[idx].isalpha():
                 ltr+=1
-    dict={'Letters':ltr,'Digits':dgt}
+    dict={'LETTERS':ltr,'DIGITS':dgt}
     
     return dict
 print(count_all('This car costs 95400 usd'))
